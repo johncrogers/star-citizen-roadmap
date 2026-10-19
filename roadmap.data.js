@@ -4,14 +4,14 @@
 //   priority (lower is sooner), pitch (for players), depends [ids], tasks [done, total],
 //   shipped (date) and changelog (entry id) once shipped.
 
-window.ROADMAP_META = {"updated": "2026-10-18", "count": 24, "phases": {"0": "Foundation", "1": "Accounts", "2": "Social", "3": "Groups", "4": "Team dashboards"}};
+window.ROADMAP_META = {"updated": "2026-10-19", "count": 24, "phases": {"0": "Foundation", "1": "Accounts", "2": "Social", "3": "Groups", "4": "Team dashboards"}};
 
 window.ROADMAP = [
 {"id":"changelog-app","title":"What's new","status":"shipped","phase":0,"priority":1,"pitch":"A What's new page for every update, with a dot in each app when there's something you haven't seen.","depends":[],"tasks":[9,9],"shipped":"2026-10-18","changelog":"2026-10-18-whats-new"},
 {"id":"roadmap-app","title":"Roadmap","status":"shipped","phase":0,"priority":2,"pitch":"This page: every idea in the works, in the order we plan to build it.","depends":["changelog-app"],"tasks":[6,6],"shipped":"2026-10-18","changelog":"2026-10-18-roadmap"},
-{"id":"engineering-foundation","title":"Engineering foundation","status":"concept","phase":0,"priority":3,"pitch":"Behind the scenes: the groundwork for faster, safer updates: shared code, automatic tests and automatic deploys.","depends":[],"tasks":[0,8]},
+{"id":"engineering-foundation","title":"Engineering foundation","status":"shipped","phase":0,"priority":3,"pitch":"Behind the scenes: the groundwork for faster, safer updates: shared code, automatic tests and automatic deploys.","depends":[],"tasks":[11,11],"shipped":"2026-10-19","changelog":"2026-10-19-engineering-foundation"},
 {"id":"web-shell","title":"New app shell","status":"concept","phase":0,"priority":4,"pitch":"A faster, unified home for all the tools, with one menu, one look, and every app a click away.","depends":["engineering-foundation"],"tasks":[0,7]},
-{"id":"game-data-json","title":"Game data as JSON","status":"concept","phase":0,"priority":5,"pitch":"Behind the scenes: ships, items, contracts and more in a form the new pages can load quickly.","depends":["engineering-foundation"],"tasks":[0,5]},
+{"id":"game-data-json","title":"Game data as JSON","status":"concept","phase":0,"priority":5,"pitch":"Behind the scenes: ships, items, contracts and more in a form the new pages can load quickly.","depends":["engineering-foundation"],"tasks":[1,5]},
 {"id":"job-ledger-local","title":"Job ledger (local)","status":"concept","phase":0,"priority":6,"pitch":"Split a job's profits with your crew today: log income and costs, set the split, and see who pays whom. No account needed.","depends":["web-shell"],"tasks":[0,8]},
 {"id":"api-platform","title":"API platform","status":"concept","phase":1,"priority":7,"pitch":"Behind the scenes: the server that will keep accounts, progress and groups safe.","depends":["engineering-foundation"],"tasks":[0,9]},
 {"id":"sign-in","title":"Sign-in and accounts","status":"concept","phase":1,"priority":8,"pitch":"Sign in with Discord, Google or GitHub. Accounts start invite-only.","depends":["api-platform"],"tasks":[0,10]},
