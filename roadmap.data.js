@@ -4,7 +4,7 @@
 //   priority (lower is sooner), pitch (for players), depends [ids], tasks [done, total],
 //   shipped (date) and changelog (entry id) once shipped.
 
-window.ROADMAP_META = {"updated": "2026-10-19", "count": 24, "phases": {"0": "Foundation", "1": "Accounts", "2": "Social", "3": "Groups", "4": "Team dashboards"}};
+window.ROADMAP_META = {"updated": "2026-10-19", "count": 25, "phases": {"0": "Foundation", "1": "Accounts", "2": "Social", "3": "Groups", "4": "Team dashboards"}};
 
 window.ROADMAP = [
 {"id":"changelog-app","title":"What's new","status":"shipped","phase":0,"priority":1,"pitch":"A What's new page for every update, with a dot in each app when there's something you haven't seen.","depends":[],"tasks":[9,9],"shipped":"2026-10-18","changelog":"2026-10-18-whats-new"},
@@ -30,5 +30,6 @@ window.ROADMAP = [
 {"id":"team-pool","title":"Team pool","status":"concept","phase":3,"priority":21,"pitch":"Behind the scenes: combines your group's ships, gear and ranks so the team views can use them.","depends":["cloud-sync","organizations","parties"],"tasks":[0,6]},
 {"id":"readiness-contracts","title":"Team readiness: contracts","status":"concept","phase":4,"priority":22,"pitch":"See every contract your group can run together, with pay per person and what would unlock more.","depends":["team-pool"],"tasks":[1,9]},
 {"id":"readiness-careers","title":"Team readiness: careers","status":"concept","phase":4,"priority":23,"pitch":"See which careers your group is ready for, who brings what, and what's missing.","depends":["team-pool"],"tasks":[0,8]},
-{"id":"group-finder","title":"Group finder","status":"concept","phase":4,"priority":24,"pitch":"\"What should we do tonight?\" Ranked ideas for your party, with seats, a checklist and a ready check.","depends":["readiness-careers","readiness-contracts","parties"],"tasks":[0,7]}
+{"id":"group-finder","title":"Group finder","status":"concept","phase":4,"priority":24,"pitch":"\"What should we do tonight?\" Ranked ideas for your party, with seats, a checklist and a ready check.","depends":["readiness-careers","readiness-contracts","parties"],"tasks":[0,7]},
+{"id":"spare-matches","title":"Spares and wants","status":"concept","phase":4,"priority":25,"pitch":"See which of your spare parts and gear a friend, org mate or party member has on their wishlist, and what they have spare that's on yours.","depends":["team-pool","friends"],"tasks":[0,7]}
 ];
